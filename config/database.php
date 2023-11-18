@@ -1,17 +1,36 @@
 <?php
-    $host = 'localhost';
-    $db = 'library_db';
-    $user = 'root';
-    $pass = '';
-    $charset = 'utf8mb4';
+include 'config/database.php';
+include 'includes/header.php';
 
-    $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
+$route = $_GET['route'] ?? '';
 
-    try {
-        $pdo = new PDO($dsn, $user, $pass);
-        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    } catch (PDOException $e) {
-        echo 'Connection failed: ' . $e->getMessage();
-        die();
-    }
+switch ($route) {
+    case 'books':
+        require_once 'src/Controller/BookController.php';
+        $bookController = new BookController($pdo);
+        $bookController->index();
+        break;
+    case 'add':
+        require_once 'src/Controller/BookController.php';
+        $bookController = new BookController($pdo);
+        $bookController->add();
+        break;
+    case 'delete':
+        require_once 'src/Controller/BookController.php';
+        $bookController = new BookController($pdo);
+        $bookController->delete();
+        break;
+    case 'search':
+        require_once 'src/Controller/BookController.php';
+        $bookController = new BookController($pdo);
+        $bookController->search();
+        break;
+    case '':
+        echo "<br>This is the home page.";
+        break;
+    default:
+        echo "<br>Error 404: Page not found!"; 
+}
+
+include 'includes/footer.php';
 ?>
