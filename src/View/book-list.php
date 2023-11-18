@@ -10,7 +10,8 @@
             <th>Author</th>
             <th>Category</th>
             <th>Published Year</th>
-            <th>Status</th>
+            <th>Quantity</th>
+            <th>Available Qty</th>
             <th>Book Cover</th>
         </tr>
     </thead>
@@ -26,7 +27,8 @@
                 <td><?php echo $book["author"] ?></td>
                 <td><?php echo $book["category"] ?></td>
                 <td><?php echo $book["year"] ?></td>
-                <td><?php echo $book["status"] ?></td>
+                <td><?php echo $book["quantity"] ?></td>
+                <td><?php echo $book["available_quantity"] ?></td> 
                 <td><?php echo "<img src='".$book['image']."' alt='book_cover'> "?></td>
             </tr>
         <?php 

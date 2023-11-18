@@ -11,9 +11,9 @@ class Book {
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
-    public function addBook($book_id, $title, $author, $category, $publishedYear, $status, $book_cover) {
-        $stmt = $this->pdo->prepare('INSERT INTO books (book_id, title, author, category, year, status, image) VALUES  (?, ?, ?, ?, ?, ?, ?)');
-        $stmt->execute([$book_id, $title, $author, $category, $publishedYear, $status, $book_cover]);
+    public function addBook($book_id, $title, $author, $category, $publishedYear, $quantity, $book_cover) {
+        $stmt = $this->pdo->prepare('INSERT INTO books (book_id, title, author, category, year, quantity, available_quantity, image) VALUES  (?, ?, ?, ?, ?, ?, ?, ?)');
+        $stmt->execute([$book_id, $title, $author, $category, $publishedYear, $quantity, $quantity, $book_cover]);
     }
 
     public function deleteBook($title){

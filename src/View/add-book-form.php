@@ -26,10 +26,10 @@
         </tr>
         
         <tr>
-            <td><label for="published_year">Status:</label></td>
-            <td><input type="text" name="status" required></td>
+            <td><label for="published_year">Quantity:</label></td>
+            <td><input type="text" name="quantity" required></td>
         </tr>
-        
+
         <tr>
             <td><label for="published_year">Book Cover(base64):</label></td>
             <td><input type="text" name="book_cover" required></td>

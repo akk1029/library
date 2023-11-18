@@ -19,12 +19,13 @@ class BookController {
             $author = $_POST['author'];
             $category = $_POST['category'];
             $publishedYear = $_POST['published_year'];
-            $status = $_POST['status'];
+            $quantity = $_POST['quantity'];
+            $available_quantity = $_POST['quantity'];
             $book_cover = $_POST['book_cover'];
             $book_id = uniqid();
             require_once 'src/Model/Book.php';
             $bookModel = new Book($this->pdo);
-            $bookModel->addBook($book_id, $title, $author, $category, $publishedYear, $status, $book_cover);
+            $bookModel->addBook($book_id, $title, $author, $category, $publishedYear, $quantity, $available_quantity, $book_cover);
         }
 
         include 'src/View/add-book-form.php';

@@ -27,6 +27,7 @@ switch ($route) {
         break;
     case '':
         echo "<br>This is the home page.";
+        break;
     default:
         echo "<br>Error 404: Page not found!"; 
 }
