@@ -1,36 +1,34 @@
 <?php
-include 'config/database.php';
-include 'includes/header.php';
+try {
+    $pdo = new PDO('mysql:host=localhost', 'root', '');
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-$route = $_GET['route'] ?? '';
+    // Create the database
+    $pdo->exec('CREATE DATABASE IF NOT EXISTS library_db');
 
-switch ($route) {
-    case 'books':
-        require_once 'src/Controller/BookController.php';
-        $bookController = new BookController($pdo);
-        $bookController->index();
-        break;
-    case 'add':
-        require_once 'src/Controller/BookController.php';
-        $bookController = new BookController($pdo);
-        $bookController->add();
-        break;
-    case 'delete':
-        require_once 'src/Controller/BookController.php';
-        $bookController = new BookController($pdo);
-        $bookController->delete();
-        break;
-    case 'search':
-        require_once 'src/Controller/BookController.php';
-        $bookController = new BookController($pdo);
-        $bookController->search();
-        break;
-    case '':
-        echo "<br>This is the home page.";
-        break;
-    default:
-        echo "<br>Error 404: Page not found!"; 
+    // Switch to the database
+    $pdo->exec('USE library_db');
+
+    // Create a table
+    $pdo->exec('
+        CREATE TABLE IF NOT EXISTS `books` (
+            `id` INT NOT NULL AUTO_INCREMENT,
+            `book_id` TEXT NOT NULL , 
+            `title` TEXT NOT NULL , 
+            `author` TEXT NOT NULL , 
+            `category` TEXT NOT NULL , 
+            `year` INT NOT NULL , 
+            `quantity` INT NOT NULL , 
+            `available_quantity` INT NOT NULL , 
+            `image` TEXT NOT NULL,
+            PRIMARY KEY (`id`) 
+        ) ENGINE = InnoDB;
+    ');
+
+} 
+
+catch (PDOException $e) {
+    echo 'Could not create the database: ' . $e->getMessage();
+    die();
 }
-
-include 'includes/footer.php';
 ?>
