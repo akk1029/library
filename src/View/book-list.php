@@ -6,12 +6,12 @@
     <thead>
         <tr>
             <th>No</th>
+            <th>Book ID</th>
             <th>Title</th>
             <th>Author</th>
             <th>Category</th>
             <th>Published Year</th>
-            <th>Quantity</th>
-            <th>Available Qty</th>
+            <th>Status</th>
             <th>Book Cover</th>
         </tr>
     </thead>
@@ -23,12 +23,21 @@
         ?>
             <tr>
                 <td><?php echo $i ?></td>
+                <td><?php echo $book["book_id"] ?></td>
                 <td><?php echo $book["title"] ?></td>
                 <td><?php echo $book["author"] ?></td>
                 <td><?php echo $book["category"] ?></td>
                 <td><?php echo $book["year"] ?></td>
-                <td><?php echo $book["quantity"] ?></td>
-                <td><?php echo $book["available_quantity"] ?></td> 
+                <td><?php 
+
+                if ($book["available_quantity"] == 0 ){
+                    echo "Not available";
+                }
+                else{
+                    echo "Available";
+                }
+                
+                ?></td>
                 <td><?php echo "<img src='".$book['image']."' alt='book_cover'> "?></td>
             </tr>
         <?php 

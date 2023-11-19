@@ -1,10 +1,12 @@
 <?php include 'templates/base-template.php'; ?>
 
-<h2>Delete Book</h2>
+<h2>Delete Book By BOOK ID</h2>
+
+<h4>Note: Copy the book id of the book you want to delete in search.</h4>
 
 <form method="post" action="?route=delete">
-    <label for="title">Title:</label>
-    <input type="text" name="title" required>
+    <label for="book_id">BOOK ID:</label>
+    <input type="text" name="book_id" required>
     <button type="submit">Delete Book</button>
 </form>
 

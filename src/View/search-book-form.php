@@ -19,7 +19,8 @@
         else{
             foreach ($book as $item):
                 echo "<br>".$item['id'].". ".$item['title']." by  ".$item['author']." (".$item['year'].")<br><br>";
-                echo "<img width='150px' src='".$item['image']."' alt='book_cover'> ";
+                echo "<img width='150px' src='".$item['image']."' alt='book_cover'> <br><br>";
+                echo "BOOK ID: ".$item['book_id'];
             endforeach;
         } 
     }

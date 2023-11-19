@@ -20,12 +20,11 @@ class BookController {
             $category = $_POST['category'];
             $publishedYear = $_POST['published_year'];
             $quantity = $_POST['quantity'];
-            $available_quantity = $_POST['quantity'];
             $book_cover = $_POST['book_cover'];
             $book_id = uniqid();
             require_once 'src/Model/Book.php';
             $bookModel = new Book($this->pdo);
-            $bookModel->addBook($book_id, $title, $author, $category, $publishedYear, $quantity, $available_quantity, $book_cover);
+            $bookModel->addBook($book_id, $title, $author, $category, $publishedYear, $quantity, $book_cover);
         }
 
         include 'src/View/add-book-form.php';
@@ -33,11 +32,11 @@ class BookController {
 
     public function delete() {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            $title = $_POST['title'];
+            $book_id = $_POST['book_id'];
 
             require_once 'src/Model/Book.php';
             $bookModel = new Book($this->pdo);
-            $bookModel->deleteBook($title);
+            $bookModel->deleteBook($book_id);
         }
 
         include 'src/View/delete-book-form.php';

@@ -16,9 +16,9 @@ class Book {
         $stmt->execute([$book_id, $title, $author, $category, $publishedYear, $quantity, $quantity, $book_cover]);
     }
 
-    public function deleteBook($title){
-        $stmt = $this->pdo->prepare('DELETE FROM books WHERE title=?');
-        $stmt->execute([$title]);
+    public function deleteBook($book_id){
+        $stmt = $this->pdo->prepare('DELETE FROM books WHERE book_id=?');
+        $stmt->execute([$book_id]);
     }
  
     public function searchBook($title){

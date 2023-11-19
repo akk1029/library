@@ -2,6 +2,8 @@
 
 <h2>Add New Book</h2>
 
+<h3>Please change your image to base64 <a href="https://www.base64-image.de/" target="_blank">HERE.</a></h3>
+
 <form method="post" action="?route=add">
     <table>
 
