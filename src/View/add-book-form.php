@@ -29,7 +29,7 @@
         
         <tr>
             <td><label for="published_year">Quantity:</label></td>
-            <td><input type="text" name="quantity" required></td>
+            <td><input type="number" name="quantity" required></td>
         </tr>
 
         <tr>

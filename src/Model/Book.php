@@ -16,6 +16,11 @@ class Book {
         $stmt->execute([$book_id, $title, $author, $category, $publishedYear, $quantity, $quantity, $book_cover]);
     }
 
+    public function updateBook($book_id, $title, $author, $category, $publishedYear, $quantity, $book_cover) {
+        $stmt = $this->pdo->prepare('UPDATE books SET title=?, author=?, category=?, year=?, quantity=?, available_quantity=?, image=? WHERE book_id=?)');
+        $stmt->execute([$title, $author, $category, $publishedYear, $quantity, $quantity, $book_cover, $book_id]);
+    }
+
     public function deleteBook($book_id){
         $stmt = $this->pdo->prepare('DELETE FROM books WHERE book_id=?');
         $stmt->execute([$book_id]);

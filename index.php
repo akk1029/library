@@ -25,6 +25,11 @@ switch ($route) {
         $bookController = new BookController($pdo);
         $bookController->search();
         break;
+    case 'update':
+        require_once 'src/Controller/BookController.php';
+        $bookController = new BookController($pdo);
+        $bookController->update();
+        break;
     case '':
         echo "<br>This is the home page.";
         break;

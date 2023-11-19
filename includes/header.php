@@ -14,6 +14,7 @@
     <nav>
         <a href="?route=books">View Books</a>
         <a href="?route=add">Add Book</a>
+        <a href="?route=update">Update Book</a>
         <a href="?route=delete">Delete Book</a>
         <a href="?route=search">Search Book</a>
     </nav>

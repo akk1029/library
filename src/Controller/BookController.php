@@ -30,6 +30,23 @@ class BookController {
         include 'src/View/add-book-form.php';
     }
 
+    public function update() {
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            $book_id = $_POST['book_id'];
+            $title = $_POST['title'];
+            $author = $_POST['author'];
+            $category = $_POST['category'];
+            $publishedYear = $_POST['published_year'];
+            $quantity = $_POST['quantity'];
+            $book_cover = $_POST['book_cover'];
+            require_once 'src/Model/Book.php';
+            $bookModel = new Book($this->pdo);
+            $bookModel->updateBook($book_id, $title, $author, $category, $publishedYear, $quantity, $book_cover);
+        }
+
+        include 'src/View/update-book-form.php';
+    }
+
     public function delete() {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $book_id = $_POST['book_id'];
