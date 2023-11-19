@@ -8,10 +8,11 @@
     <title>Library Management System</title>
 </head>
 <body>
+    
+    <nav>
     <header>
         <h1>Library Management System</h1>
     </header>
-    <nav>
         <a href="?route=books">View Books</a>
         <a href="?route=add">Add Book</a>
         <a href="?route=update">Update Book</a>
