@@ -25,6 +25,8 @@ try {
         ) ENGINE = InnoDB;
     ');
 
+    require_once('config/row.php');
+
 } 
 
 catch (PDOException $e) {
