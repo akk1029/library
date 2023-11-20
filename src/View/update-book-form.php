@@ -32,7 +32,7 @@
     <label for="published_year">Book Cover(base64):</label>
     <input type="text" name="book_cover" required></td><br><br>
 
-    <button type="submit">Add Book</button>
+    <button type="submit">Update Book</button>
         
 </form>
 
