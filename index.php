@@ -8,7 +8,7 @@ switch ($route) {
     case 'books':
         require_once 'src/Controller/BookController.php';
         $bookController = new BookController($pdo);
-        $bookController->index();
+        $bookController->view();
         break;
     case 'add':
         require_once 'src/Controller/BookController.php';
@@ -29,6 +29,11 @@ switch ($route) {
         require_once 'src/Controller/BookController.php';
         $bookController = new BookController($pdo);
         $bookController->update();
+        break;
+    case 'borrow':
+        require_once 'src/Controller/BorrowController.php';
+        $borrowController = new BorrowController($pdo);
+        $borrowController->borrow();
         break;
     case '':
         echo "<br>This is the home page.";

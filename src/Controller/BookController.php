@@ -6,7 +6,7 @@ class BookController {
         $this->pdo = $pdo;
     }
  
-    public function index() {
+    public function view() {
         require_once 'src/Model/Book.php';
         $bookModel = new Book($this->pdo);
         $books = $bookModel->getAllBooks();

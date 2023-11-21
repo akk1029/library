@@ -31,7 +31,7 @@ try {
         `id` INT NOT NULL AUTO_INCREMENT,
         `book_id` VARCHAR(255) NOT NULL, -- Change data type to VARCHAR or another text type as needed
         `name` TEXT NOT NULL,
-        `ph_no` INT NOT NULL,
+        `email` VARCHAR(255) NOT NULL,
         `borrow_date` DATE NOT NULL,
         `return_date` DATE NOT NULL,
         PRIMARY KEY (`id`),

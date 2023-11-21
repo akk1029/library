@@ -13,10 +13,12 @@
     <header>
         <h1>Library Management System</h1>
     </header>
+        <a href="?route=">Home</a>
         <a href="?route=books">View Books</a>
         <a href="?route=add">Add Book</a>
         <a href="?route=update">Update Book</a>
         <a href="?route=delete">Delete Book</a>
         <a href="?route=search">Search Book</a>
+        <a href="?route=borrow">Borrow Book</a>
     </nav>
     <main>
