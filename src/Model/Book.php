@@ -35,8 +35,9 @@ class Book {
     }
  
     public function searchBook($title){
-        $stmt = $this->pdo->prepare('SELECT * FROM books WHERE title = ?');
-        $stmt->execute([$title]);
+        $stmt = $this->pdo->prepare('SELECT * FROM books WHERE title LIKE :searchTerm');
+        $stmt->bindValue(':searchTerm', '%' . $title . '%', PDO::PARAM_STR);
+        $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 }

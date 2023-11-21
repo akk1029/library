@@ -1,7 +1,6 @@
 <?php
 include 'config/database.php';
 include 'includes/header.php';
-include 'includes/land.php';
 
 $route = $_GET['route'] ?? '';
 
@@ -33,6 +32,7 @@ switch ($route) {
         break;
     case '':
         echo "<br>This is the home page.";
+        include 'includes/land.php';
         break;
     default:
         echo "<br>Error 404: Page not found!"; 
