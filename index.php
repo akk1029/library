@@ -1,6 +1,7 @@
 <?php
 include 'config/database.php';
 include 'includes/header.php';
+include 'includes/land.php';
 
 $route = $_GET['route'] ?? '';
 
