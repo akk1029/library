@@ -13,7 +13,7 @@ try {
     $pdo->exec('
     CREATE TABLE IF NOT EXISTS `books` (
         `id` INT NOT NULL AUTO_INCREMENT,
-        `book_id` VARCHAR(255) NOT NULL, -- Change data type to VARCHAR or another text type as needed
+        `book_id` VARCHAR(255) NOT NULL, 
         `title` TEXT NOT NULL,
         `author` TEXT NOT NULL,
         `category` TEXT NOT NULL,
@@ -22,25 +22,31 @@ try {
         `available_quantity` INT NOT NULL,
         `image` TEXT NOT NULL,
         PRIMARY KEY (`id`),
-        UNIQUE KEY (`book_id`) -- Adding a unique constraint on book_id
+        UNIQUE KEY (`book_id`) 
     ) ENGINE = InnoDB;
     ');
 
     $pdo->exec('
     CREATE TABLE IF NOT EXISTS `borrow` (
         `id` INT NOT NULL AUTO_INCREMENT,
-        `book_id` VARCHAR(255) NOT NULL, -- Change data type to VARCHAR or another text type as needed
+        `book_id` VARCHAR(255) NOT NULL,
+        `borrow_id` VARCHAR(255) NOT NULL,
         `name` TEXT NOT NULL,
         `email` VARCHAR(255) NOT NULL,
         `borrow_date` DATE NOT NULL,
+        `due_date` DATE NOT NULL,
         `return_date` DATE NOT NULL,
         PRIMARY KEY (`id`),
         INDEX (`book_id`),
-        FOREIGN KEY (`book_id`) REFERENCES books(`book_id`)
+        FOREIGN KEY (`book_id`) REFERENCES books(`book_id`),
+        UNIQUE KEY (`borrow_id`) 
     ) ENGINE = InnoDB;
     ');
 
-    require_once('config/row.php');
+    if(isset($dummy_data)){
+        require_once('config/row.php');
+        $dummy_data = 1;
+    }
 
 } 
 

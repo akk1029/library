@@ -20,5 +20,7 @@
         <a href="?route=delete">Delete Book</a>
         <a href="?route=search">Search Book</a>
         <a href="?route=borrow">Borrow Book</a>
+        <a href="?route=return">Return Book</a>
+        <a href="?route=borrow-list">Borrow History</a>
     </nav>
     <main>

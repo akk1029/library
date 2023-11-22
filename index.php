@@ -35,6 +35,16 @@ switch ($route) {
         $borrowController = new BorrowController($pdo);
         $borrowController->borrow();
         break;
+    case 'borrow-list':
+        require_once 'src/Controller/BorrowController.php';
+        $borrowController = new BorrowController($pdo);
+        $borrowController->view();
+        break;
+    case 'return':
+        require_once 'src/Controller/BorrowController.php';
+        $borrowController = new BorrowController($pdo);
+        $borrowController->return();
+        break;
     case '':
         echo "<br>This is the home page.";
         include 'includes/land.php';
