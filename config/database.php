@@ -44,9 +44,13 @@ try {
     ');
 
     if(isset($dummy_data)){
-        require_once('config/row.php');
-        $dummy_data = 1;
+        echo "";
     }
+    else{
+        require_once('config/row.php');
+    }
+
+    $dummy_data = 1;
 
 } 
 
