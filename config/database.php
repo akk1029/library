@@ -43,14 +43,15 @@ try {
     ) ENGINE = InnoDB;
     ');
 
-    if(isset($dummy_data)){
-        echo "";
-    }
-    else{
+    $stmt = $pdo->prepare("SELECT COUNT(*) as count FROM books");
+    $stmt->execute();
+    $row = $stmt->fetch(PDO::FETCH_ASSOC);
+    $count = $row['count'];
+
+    if ($count == 0) {
+        // Insert dummy data
         require_once('config/row.php');
     }
-
-    $dummy_data = 1;
 
 } 
 
