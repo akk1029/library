@@ -36,7 +36,7 @@
                 <div class="container">
                     <h2>Brandon Tee</h2>
                     <p class="title">Server Specialist</p>
-                    <p>something</p>
+                    <p>Python > javascript</p>
                     <p>0362404</p>
                 </div>
             </div>
@@ -48,7 +48,7 @@
                 <div class="container">
                     <h2>Joshua Angelo</h2>
                     <p class="title">Creative Director</p>
-                    <p>something</p>
+                    <p>error 404</p>
                     <p>0362637</p>
                 </div>
             </div>

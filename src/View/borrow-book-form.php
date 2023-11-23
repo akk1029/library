@@ -33,7 +33,7 @@
 </td>
         </tr>
         <tr>
-            <td colspan="2"><button type="submit">Borrow Book</button>
+            <td colspan="2"><button class="cta-button" type="submit">Borrow Book</button>
 </td>
         </tr>
     </table>

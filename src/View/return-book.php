@@ -1,17 +1,25 @@
 <?php include 'templates/base-template.php'; ?>
 
-<h2>Return Book with BORROW ID</h2>
+<h2>Return Book with BORROW ID</h2><br>
 
-<h4>Note: Copy the borrow id form borrow history.</h4>
+<h4 style="text-align: center;">Note: Copy the borrow id form borrow history.</h4>
 
-<form method="post" action="?route=return">
-    <label for="borrow_id">BORROW ID:</label>
-    <input type="text" name="borrow_id" required><br><br>
-
-    <label for="return_date">Return Date:</label>
-    <input type="date" name="return_date" required><br><br>
-
-    <button type="submit">Return Book</button>
+<form method="post" action="?route=return" style="text-align: center;">
+    <table>
+        <tr>
+            <td><label for="borrow_id">BORROW ID:</label></td>
+            <td><input type="text" name="borrow_id" required></td>
+        </tr>
+        <tr>
+            <td><label for="return_date">Return Date:</label></td>
+            <td><input type="date" name="return_date" required></td>
+        </tr>
+        <tr>
+            <td colspan="2"><button class="cta-button" type="submit">Return Book</button></td>
+        </tr>
+    </table>
+    
+    
 </form>
 
 <br><br>

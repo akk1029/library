@@ -1,8 +1,8 @@
 <?php include 'templates/base-template.php'; ?>
 
-<h2>Add New Book</h2>
+<h2>Add New Book</h2><br>
 
-<h3>Please change your image to base64 <a href="https://www.base64-image.de/" target="_blank">HERE.</a></h3>
+<h4 style="text-align: center;">NOTE: Please change your image to base64 <a href="https://www.base64-image.de/" target="_blank">HERE.</a></h4>
 
 <form method="post" action="?route=add">
     <table>
@@ -38,7 +38,7 @@
         </tr>
         
         <tr>
-            <td colspan="2"><button type="submit" onclick="add()">Add Book</button></td>
+            <td style="text-align: center;" colspan="2"><button class="cta-button" type="submit" onclick="add()">Add Book</button></td>
         </tr>
 
     </table>
