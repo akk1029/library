@@ -1,3 +1,4 @@
+
 <section>
         <h2 style="text-align: center;">Welcome to Book Hub</h2>
         <p style="text-align: center;">Where your imagination can run free with thousands of books to pour over <br>
@@ -36,6 +37,20 @@
                     who is sixteen and angry at the adult world for its phoniness, its fakeness.<br>
                     The story, written by J.D. Salinger, is told from the first-person narrative,<br> from the
                     storyteller's point-of-view.
+                </p>
+            </div>
+            <div id="image-carousel">
+
+            <div class="carousel-item" style="background-image: url(img/chamber.jpg);">\
+                <p class="text1">
+                    <span style="font-size: larger;font-family: 'Times New Roman', Times, serif;"> 
+                        Harry Potter and the Chamber of Secrets
+                    </span><br><br>
+                    The plot follows Harry's second year at Hogwarts School of Witchcraft and Wizardry,<br> 
+                    during which a series of messages on the walls of the school's corridors warn that the "Chamber of Secrets"<br>
+                     has been opened and that the "heir of Slytherin" would kill all pupils who do not come from all-magical families.
+
+                    
                 </p>
             </div>
 
