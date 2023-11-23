@@ -1,28 +1,43 @@
 <?php include 'templates/base-template.php'; ?>
 
 <h2>Borrow Book</h2>
+<br>
 
-
-<form method="post" action="?route=borrow">
+<form method="post" action="?route=borrow" style="text-align: center;">
 
     <label for="book_id">BOOK ID:</label>
     <input type="text" name="book_id" required><br>
 
-    <p>Please get the book id you want to borrow from book list or search page.</p>
+    <h4>Please get the book id you want to borrow from book list or search page.</h4>
 
 
-    <h2>Your Information</h2>
+    <br><br><h2>Your Information</h2>
 
-    <label for="name">NAME:</label>
-    <input type="text" name="name" required><br><br>
-
-    <label for="email">Email Address:</label>
-    <input type="email" name="email" required><br><br>
-
-    <label for="borrow_date">Borrow Date:</label>
-    <input type="date" name="borrow_date" required><br><br>
-
-    <button type="submit">Borrow Book</button>
+    <table>
+        <tr>
+            <td><label for="name">NAME:</label>
+</td>
+            <td><input type="text" name="name" required><br><br>
+</td>
+        </tr>
+        <tr>
+            <td><label for="email">Email Address:</label>
+</td>
+            <td><input type="email" name="email" required><br><br>
+</td>
+        </tr>
+        <tr>
+            <td><label for="borrow_date">Borrow Date:</label>
+</td>
+            <td><input type="date" name="borrow_date" required><br><br>
+</td>
+        </tr>
+        <tr>
+            <td colspan="2"><button type="submit">Borrow Book</button>
+</td>
+        </tr>
+    </table>
+    
         
 </form>
 
@@ -31,11 +46,15 @@
     if(isset($status)){
 
         if($status == "available"){
-            echo "<br>Borrow success";
+            echo '<script>
+                alert("Borrowed Successfully!");
+            </script>';
         }
 
         else{
-            echo "<br>The boook is out of stock";
+            echo '<script>
+                alert("The book is out of stock.");
+            </script>';
         } 
     }
 

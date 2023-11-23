@@ -38,7 +38,7 @@
         </tr>
         
         <tr>
-            <td colspan="2"><button type="submit">Add Book</button></td>
+            <td colspan="2"><button type="submit" onclick="add()">Add Book</button></td>
         </tr>
 
     </table>

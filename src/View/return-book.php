@@ -18,20 +18,24 @@
 
 <?php
 
-    if(isset($status)){
+if(isset($status)){
 
-        if($status == "successful"){
-            echo "The book is returned successfully.";
-        }
-
-        else{
-            echo "The boook is already returned";
-        } 
+    if($status == "successful"){
+        echo '<script>
+            alert("Returned Successfully!");
+        </script>';
     }
 
     else{
-        echo "";
-    }
+        echo '<script>
+            alert("The book is already returned.");
+        </script>';
+    } 
+}
+
+else{
+    echo "";
+}
 
 ?>
 

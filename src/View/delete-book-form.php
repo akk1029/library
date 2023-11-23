@@ -7,7 +7,7 @@
 <form method="post" action="?route=delete">
     <label for="book_id">BOOK ID:</label>
     <input type="text" name="book_id" required>
-    <button type="submit">Delete Book</button>
+    <button type="submit" onclick="remove()">Delete Book</button>
 </form>
 
 <?php include 'templates/base-template.php'; ?>
