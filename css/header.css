@@ -21,7 +21,8 @@
 .dropbtn1,
 .dropbtn2,
 .homebtn,
-.viewbtn {
+.viewbtn,
+.aboutbtn {
     background-color: #3498DB;
     color: white;
     padding: 16px;
@@ -37,7 +38,9 @@
 .homebtn:hover,
 .homebtn:focus,
 .viewbtn:hover,
-.viewbtn:focus {
+.viewbtn:focus,
+.aboutbtn:hover,
+.aboutbtn:focus {
     background-color: #2980B9;
 }
 

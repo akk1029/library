@@ -40,7 +40,12 @@ body {
 .vision-section {
     padding: 50px;
     text-align: center;
-    background-color: #292f3a;
+    background-color: hsl(219, 17%, 19%);
+    color: white;
+}
+
+div.about-section > *,
+div.vision-section > *{
     color: white;
 }
 

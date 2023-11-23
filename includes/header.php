@@ -45,7 +45,9 @@
                 </div>
             </div>
 
-            <a href="?route=about"><button class="aboutbtn">About Us</button></a>
+            <div class="navlinks">
+                <a href="?route=about"><button class="aboutbtn">About Us</button></a>
+            </div>
 
             <div class="searchpad">
                 <a href="?route=search"><img class="searchicon" src="img/search-outline.svg" alt="search icon"></a>
