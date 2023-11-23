@@ -24,7 +24,7 @@
                 <div class="container">
                     <h2>Arvind Skanda</h2>
                     <p class="title">PR Manager</p>
-                    <p>something</p>
+                    <p>who hired me ?</p>
                     <p>0362384</p>
                 </div>
             </div>
