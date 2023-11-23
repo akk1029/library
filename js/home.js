@@ -1,4 +1,4 @@
-let currentIndex = 0;
+        let currentIndex = 0;
         const totalSlides = document.querySelectorAll('.carousel-item').length;
 
         function showSlide(index) {

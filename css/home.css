@@ -74,11 +74,6 @@ footer {
     color: white;
 }
 
-img {
-    width: 800px;
-    height: 417.03px;
-}
-
 .text1 {
     text-align: justify;
     position: relative;
@@ -87,4 +82,5 @@ img {
     width: 600px;
     color: white;
     background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
 }

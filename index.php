@@ -48,9 +48,11 @@ switch ($route) {
     case 'about':
         include 'src/View/about.php';
         break;
+    case 'home':
+        include 'src/View/home.php';
+        break;
     case '':
-        echo "<br>This is the home page.";
-        include 'includes/land.php';
+        include 'src/View/home.php';
         break;
     default:
         echo "<br>Error 404: Page not found!"; 

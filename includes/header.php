@@ -4,24 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/home.css">
+    
     <script src="js/header.js"></script>
-    <script src="js/landing.js"></script>
+    <script src="js/home.js"></script>
     <title>Library Management System</title>
+
 </head>
+
 <body>
     
-<nav>
-        <header>
+    <nav>
             <div class="fulllogo">
                 <img class="weblogo" src="img/Logo.png" alt="Website Logo">
                 <h1 class="webname">BookHub</h1>
             </div>
-        </header>
         <div class="navlinks">
-            <a href="?route="><button class="homebtn">Home</button></a>
+            <a href="?route=home"><button class="homebtn">Home</button></a>
             <a href="?route=books"><button class="viewbtn">View Books</button></a>
 
 
@@ -49,4 +50,6 @@
             </div>
         </div>
     </nav>
-    <main>
+
+<main style="padding: 20px;">
+

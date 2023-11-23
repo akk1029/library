@@ -3,11 +3,6 @@ body {
     margin: 0;
 }
 
-html {
-    box-sizing: border-box;
-    height: 100%;
-}
-
 *,
 *:before,
 *:after {
@@ -90,19 +85,6 @@ img {
 p,
 h2 {
     text-align: center;
-}
-
-.footer {
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: gray;
-    color: white;
-    text-align: center;
-    margin-top: auto;
-    padding-top: 3px;
-    padding-bottom: 3px;
-
 }
 
 .cardpics {

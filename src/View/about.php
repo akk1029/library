@@ -76,8 +76,4 @@
                 </div>
             </div>
         </div>
-
-        <div class="footer">
-            <p><span> BookHub &copy; 2023 </span></p>
-        </div>
     </div>
