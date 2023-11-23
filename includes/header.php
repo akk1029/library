@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/error404.css">
     
     <script src="js/header.js"></script>
     <script src="js/home.js"></script>
@@ -44,6 +45,8 @@
                     <a href="?route=borrow-list">History</a>
                 </div>
             </div>
+
+            <a href="?route=about"><button class="aboutbtn">About Us</button></a>
 
             <div class="searchpad">
                 <a href="?route=search"><img class="searchicon" src="img/search-outline.svg" alt="search icon"></a>

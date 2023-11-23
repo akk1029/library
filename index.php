@@ -55,7 +55,7 @@ switch ($route) {
         include 'src/View/home.php';
         break;
     default:
-        echo "<br>Error 404: Page not found!"; 
+        include 'src/View/error404.php';
 }
 
 include 'includes/footer.php';
