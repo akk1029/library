@@ -1,4 +1,93 @@
 body {
-    background-color: orange;
-    background-image: url("photos/the-hogwart-library");
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    background-image: url(the-hogwarts-library-1920-x-1138-wallpaper-op1lmkio8xnzxd9e.jpg);
+}
+
+
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1,
+h2 {
+    color: #333;
+}
+
+p {
+    line-height: 1.6;
+    color: #666;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 100px;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: #fff;
+}
+
+#carousel-container {
+    position: relative;
+    max-width: 800px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 8px;
+
+}
+
+#image-carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding-bottom: 180px;
+}
+
+#prev-btn,
+#next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+#prev-btn {
+    left: 10px;
+}
+
+#next-btn {
+    right: 10px;
+}
+
+img {
+    width: 800px;
+    height: 417.03px;
+}
+
+.text {
+    text-align: justify;
+    margin-left: 5px;
 }

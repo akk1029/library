@@ -1,37 +1,96 @@
-nav {
-    background-color: antiquewhite;
-    padding: 10px;
-
-    border-radius: 10px;
+.weblogo {
+    width: 70px;
+    margin-left: 20px;
+    margin-right: 10px;
 }
 
-header {
-    margin-right: 5px;
+.webname {
+    padding-top: 10px;
+    font-size: 30px;
 }
 
-nav,
-a {
-    text-decoration: none;
-    color: black;
+.fulllogo {
+    display: flex;
+    flex-direction: row;
+    background-color: #3498db;
 }
 
-a {
-    width: fit-content;
-    margin: 0 auto;
+
+
+.dropbtn1,
+.dropbtn2,
+.homebtn,
+.viewbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn1:hover,
+.dropbtn1:focus,
+.dropbtn2:hover,
+.dropbtn2:focus,
+.homebtn:hover,
+.homebtn:focus,
+.viewbtn:hover,
+.viewbtn:focus {
+    background-color: #2980B9;
+}
+
+.dropdown1,
+.dropdown2 {
     position: relative;
+    display: inline-block;
 }
 
-a::after {
-    content: '';
-    height: 3px;
-    width: 0;
-    background-color: rgb(255, 140, 0);
+.dropdown-content {
+    display: none;
     position: absolute;
-    left: 0;
-    bottom: -5px;
-    transition: 0.5s;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
-a:hover:after {
-    width: 100%;
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+
+.searchicon {
+    width: 40px;
+    height: 40px;
+}
+
+.navlinks {
+    display: flex;
+    align-items: center;
+    background-color: #3498DB;
+}
+
+.navlinks a {
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+
+.searchpad {
+    margin-left: auto;
+    margin-right: 30px;
+    height: 40px;
 }

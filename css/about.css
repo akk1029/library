@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.column-vision {
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    margin: auto;
+    display: block;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+}
+
+.card-vision{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-left: 50px;
+    margin-right: 70px;
+    margin-bottom: 10px;
+}
+
+.about-section,
+.vision-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #292f3a;
+    color: white;
+}
+
+.vision-section {
+    margin-top: 20px;
+}
+
+
+.container {
+    padding: 0 16px;
+}
+
+.container-vision {
+    padding-bottom: 50px;
+    margin-left: 70px;
+    margin-right: 70px;
+    text-align: left;
+}
+
+.visiontext{
+    text-align: left;
+    font-size: 18px;
+}
+
+.container::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
+}
+
+img {
+    max-width: 200px;
+    margin: auto;
+    display: block;
+}
+
+p,
+h2 {
+    text-align: center;
+}
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: gray;
+    color: white;
+    text-align: center;
+    margin-top: auto;
+    padding-top: 3px;
+    padding-bottom: 3px;
+
+}
+
+.cardpics {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+    transition: 0.3s ease;
+}
+
+.cardpics:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
