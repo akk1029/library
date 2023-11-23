@@ -39,7 +39,7 @@
                     storyteller's point-of-view.
                 </p>
             </div>
-            <div id="image-carousel">
+  
 
             <div class="carousel-item" style="background-image: url(img/chamber.jpg);">\
                 <p class="text1">
@@ -48,13 +48,32 @@
                     </span><br><br>
                     The plot follows Harry's second year at Hogwarts School of Witchcraft and Wizardry,<br> 
                     during which a series of messages on the walls of the school's corridors warn that the "Chamber of Secrets"<br>
-                     has been opened and that the "heir of Slytherin" would kill all pupils who do not come from all-magical families.
-
-                    
+                    has been opened and that the "heir of Slytherin" would kill all pupils who do not come from all-magical families.
                 </p>
             </div>
 
         </div>
         <div id="prev-btn" onclick="prevSlide()">&#9665;</div>
         <div id="next-btn" onclick="nextSlide()">&#9655;</div>
+
+        <script>
+        let currentIndex = 0;
+        const totalSlides = document.querySelectorAll('.carousel-item').length;
+
+        function showSlide(index) {
+            const carousel = document.getElementById('image-carousel');
+            const offset = index * -100 + '%';
+            carousel.style.transform = 'translateX(' + offset + ')';
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            showSlide(currentIndex);
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+            showSlide(currentIndex);
+        }
+        </script>
     </div>

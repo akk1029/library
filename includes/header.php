@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="css/error404.css">
     
     <script src="js/header.js"></script>
-    <script src="js/home.js"></script>
     <title>Library Management System</title>
 
 </head>
